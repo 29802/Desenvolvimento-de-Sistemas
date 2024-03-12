@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes</title>
+</head>
+<body>
+    <script>
+
+    class Empresa{
+        constructor(nome, receitaAnual, despesasAnuais){
+          this.nome = nome;
+          this.receitaAnual = receitaAnual;
+          this.despesasAnuais = despesasAnuais;
+        }
+
+          calcularAnual(){
+            return(`${this.despesasAnuais-this.receitaAnual}`)
+          }
+
+          exibirRelatorio(){
+            return(`${this.nome},${this.despesasAnuais},${this.receitaAnual},${this.calcularAnual}`)
+          }
+    
+}
+    
+    let Empresa1 = new Empresa("Ana's house", 5000, 150000)
+    let Empresa2 = new Empresa("Ana's house", 9000, 1000)
+    
+    console.log(Empresa1)
+    console.log(` ${Empresa1.calcularAnual()}`);
+    console.log(` ${Empresa1.exibirRelatorio()}`);
+
+    console.log(Empresa2)
+    console.log(` ${Empresa2.calcularAnual()}`);
+    console.log(` ${Empresa2.exibirRelatorio()}`);
+    
+</script>
+</body>
+</html>

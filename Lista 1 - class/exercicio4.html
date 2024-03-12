@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Celular</title>
 </head>
 <body>
     <script>
@@ -17,15 +17,15 @@
         }
 
           informacoesCelular(){
-            return toFixed(2)
+            return(console.log(`Informações do celular : ${this.marca},${this.modelo},${this.armazenamento}`))
           }
      
 }
     
-    let Celular1 = new Celular("Marcos", 8, 5)
+    let Celular1 = new Celular("samsung", "A30", 180)
   
     console.log(Celular1)
-    console.log(`A media é: ${Celular1.informacoesCelular()}`);
+    console.log(` ${Celular1.informacoesCelular()}`);
 
     
 </script>

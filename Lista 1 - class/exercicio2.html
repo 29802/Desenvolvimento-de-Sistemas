@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Casa</title>
 </head>
 <body>
     <script>
@@ -17,15 +17,15 @@
         }
 
           informacoesCasa(){
-        
+            return(console.log(`Informqações da casa : ${this.endereco},${this.numeroQuatro},${this.area}`))
           }
     
 }
     
-    let Casa1 = new Casa("sabão", 5, 220)
+    let Casa1 = new Casa("Rua de lorenzi", 5, "220m")
   
     console.log(Casa1)
-    console.log(`O valor total  é: ${Casa1.informacoesCasa()}`);
+    console.log(`${Casa1.informacoesCasa()}`);
 
     
 </script>

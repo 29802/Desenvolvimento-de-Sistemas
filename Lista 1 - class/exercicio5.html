@@ -10,22 +10,22 @@
     <script>
 
     class Filmes{
-        constructor(titulo, genero, armazenamento){
+        constructor(titulo, genero, duracao){
           this.titulo = titulo;
           this.genero = genero;
-          this.armazenamento = armazenamento;
+          this.duracao = duracao;
         }
 
-          informacoesCelular(){
-            return(this.marca,this.modelo,this.armazenamento).toFixed(2)
+          informacoesFilme(){
+            return(console.log(`Informqações do filme : ${this.titulo},${this.genero},${this.duracao}`))
           }
     
 }
     
-    let Filmes1 = new Filmes("Marcos", 8, 5)
+    let Filmes1 = new Filmes("paulinho", 8, "50min")
   
     console.log(Filmes1)
-    console.log(`A media é: ${Filmes1.informacoesCelular()}`);
+    console.log(` ${Filmes1.informacoesFilme()}`);
 
     
 </script>
