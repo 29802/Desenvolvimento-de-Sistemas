@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes</title>
+</head>
+<body>
+    <script>
+
+    class Filmes{
+        constructor(titulo, genero, armazenamento){
+          this.titulo = titulo;
+          this.genero = genero;
+          this.armazenamento = armazenamento;
+        }
+
+          informacoesCelular(){
+            return(this.marca,this.modelo,this.armazenamento).toFixed(2)
+          }
+    
+}
+    
+    let Filmes1 = new Filmes("Marcos", 8, 5)
+  
+    console.log(Filmes1)
+    console.log(`A media é: ${Filmes1.informacoesCelular()}`);
+
+    
+</script>
+</body>
+</html>
